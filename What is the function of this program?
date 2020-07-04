@@ -1,0 +1,15 @@
+#include<TCHAR.H>
+#include<stdio.h>
+#include<conio.h>
+union U
+{ 
+float x;
+int i;
+};
+int _tmain(int argc, _TCHAR* argv[])
+{ 
+ U u;
+u.x=1.0f;
+printf( "%x", u.i);
+return 0;
+}
